@@ -3,177 +3,139 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projects Gallery</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            text-align: center;
-            background-color: #f4f4f4;
-            margin: 0;
-            padding: 20px;
-        }
-
-        h1 {
-            color: #333;
-        }
-
-        .gallery {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 15px;
-            padding: 20px;
-            max-width: 1200px;
-            margin: auto;
-        }
-
-        .gallery img {
-            width: 100%;
-            height: 200px;
-            object-fit: cover;
-            border-radius: 8px;
-            cursor: pointer;
-            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
-            transition: transform 0.3s ease-in-out;
-        }
-
-        .gallery img:hover {
-            transform: scale(1.05);
-        }
-
-        /* Lightbox Styles */
-        .lightbox {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: rgba(0, 0, 0, 0.8);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            opacity: 0;
-            visibility: hidden;
-            transition: opacity 0.3s ease, visibility 0.3s ease;
-        }
-
-        .lightbox img {
-            max-width: 90%;
-            max-height: 80%;
-            border-radius: 8px;
-            box-shadow: 0px 6px 12px rgba(255, 255, 255, 0.2);
-        }
-
-        .lightbox.show {
-            opacity: 1;
-            visibility: visible;
-        }
-
-        .close {
-            position: absolute;
-            top: 20px;
-            right: 30px;
-            font-size: 30px;
-            color: white;
-            cursor: pointer;
-            background: none;
-            border: none;
-        }
-
-        .prev, .next {
-            position: absolute;
-            top: 50%;
-            transform: translateY(-50%);
-            background: rgba(255, 255, 255, 0.5);
-            border: none;
-            padding: 10px 15px;
-            font-size: 24px;
-            cursor: pointer;
-            border-radius: 50%;
-        }
-
-        .prev {
-            left: 20px;
-        }
-
-        .next {
-            right: 20px;
-        }
-
-        .prev:hover, .next:hover {
-            background: white;
-        }
-
-    </style>
+    <title>Completed Projects Gallery | Siegen Global Manufacturing</title>
+    <meta name="description" content="Browse completed industrial projects and precision tooling components delivered by Siegen Global Manufacturing Pvt Ltd across automotive, aerospace, and electronics sectors.">
+    <meta name="keywords" content="Completed Projects, Manufacturing Portfolio, Precision Tooling Projects, Industrial Mold Projects Pune, Siegen Global">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <script defer src="assets/js/script.js"></script>
 </head>
 <body>
+    <header>
+        <div class="logo">
+            <a href="index.html#home"><img src="assets/images/logo/logo.jpeg" alt="Siegen Global Manufacturing Logo"></a>
+        </div>
+        <button class="mobile-menu-btn" aria-label="Toggle navigation">☰</button>
+        <nav>
+            <ul>
+                <li><a href="index.html#home">Home</a></li>
+                <li><a href="index.html#about">About Us</a></li>
+                <li><a href="index.html#engineering-design">Engineering Design</a></li>
+                <li><a href="index.html#engineering-services">Engineering Services</a></li>
+                <li><a href="projects.html" class="active">Projects Completed</a></li>
+                <li><a href="index.html#enquiry">Enquiry</a></li>
+            </ul>
+        </nav>
+    </header>
 
-    <h1>Projects Gallery</h1>
-    <div class="gallery">
-        <img src="PC1.jpeg" alt="Injection Mold 1">
-        <img src="PC2.jpeg" alt="Injection Mold 2">
-        <img src="PC3.jpeg" alt="Injection Mold 3">
-        <img src="PC4.jpeg" alt="Injection Mold 4">
-        <img src="PC5.jpeg" alt="Injection Mold 5">
-        <img src="PC6.jpeg" alt="Injection Mold 6">
-        <img src="PC7.jpeg" alt="Injection Mold 7">
-        <img src="PC8.jpeg" alt="Injection Mold 8">
-        <img src="PC9.jpeg" alt="Injection Mold 9">
-        <img src="PC10.jpeg" alt="Injection Mold 10">
-        <img src="PC11.jpeg" alt="Injection Mold 11">
-        
+    <div class="gallery-page-header">
+        <h1>Completed Projects Gallery</h1>
+        <p>A showcase of precision tooling, finished moulds, stamping dies, and engineered components successfully delivered to our esteemed clients worldwide.</p>
+        <div class="gallery-nav-bar">
+            <a href="index.html">← Home</a>
+            <a href="injection-molds.html">Injection Molds</a>
+            <a href="press-tools.html">Press Tools</a>
+            <a href="die-casting.html">Die Casting</a>
+            <a href="jigs-and-fixtures.html">Jigs & Fixtures</a>
+            <a href="sand-casting.html">Sand Casting</a>
+            <a href="spm-machines.html">SPM Machines</a>
+            <a href="projects.html" class="active">Completed Projects</a>
+        </div>
     </div>
 
-    <!-- Lightbox Container -->
+    <section class="gallery-section">
+        <div class="gallery">
+            <div class="gallery-card">
+                <img src="assets/images/gallery/projects/project-01.jpeg" alt="Completed Tooling Project 1">
+                <div class="caption">Completed Tooling Project 1</div>
+            </div>
+            <div class="gallery-card">
+                <img src="assets/images/gallery/projects/project-02.jpeg" alt="Precision Manufactured Component 2">
+                <div class="caption">Precision Manufactured Component 2</div>
+            </div>
+            <div class="gallery-card">
+                <img src="assets/images/gallery/projects/project-03.jpeg" alt="Industrial Mould Assembly 3">
+                <div class="caption">Industrial Mould Assembly 3</div>
+            </div>
+            <div class="gallery-card">
+                <img src="assets/images/gallery/projects/project-04.jpeg" alt="High-Tolerance Machined Part 4">
+                <div class="caption">High-Tolerance Machined Part 4</div>
+            </div>
+            <div class="gallery-card">
+                <img src="assets/images/gallery/projects/project-05.jpeg" alt="Automotive Stamping Tooling 5">
+                <div class="caption">Automotive Stamping Tooling 5</div>
+            </div>
+            <div class="gallery-card">
+                <img src="assets/images/gallery/projects/project-06.jpeg" alt="PDC Die Cast Production Part 6">
+                <div class="caption">PDC Die Cast Production Part 6</div>
+            </div>
+            <div class="gallery-card">
+                <img src="assets/images/gallery/projects/project-07.jpeg" alt="Custom Jigs and Fixture Build 7">
+                <div class="caption">Custom Jigs & Fixture Build 7</div>
+            </div>
+            <div class="gallery-card">
+                <img src="assets/images/gallery/projects/project-08.jpeg" alt="Engineered Assembly Component 8">
+                <div class="caption">Engineered Assembly Component 8</div>
+            </div>
+            <div class="gallery-card">
+                <img src="assets/images/gallery/projects/project-09.jpeg" alt="Multi-Stage Progressive Tool 9">
+                <div class="caption">Multi-Stage Progressive Tool 9</div>
+            </div>
+            <div class="gallery-card">
+                <img src="assets/images/gallery/projects/project-10.jpeg" alt="Precision Core Insert Project 10">
+                <div class="caption">Precision Core Insert Project 10</div>
+            </div>
+            <div class="gallery-card">
+                <img src="assets/images/gallery/projects/project-11.jpeg" alt="Finished Industrial Mold System 11">
+                <div class="caption">Finished Industrial Mold System 11</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Lightbox Modal -->
     <div class="lightbox" id="lightbox">
-        <button class="close" onclick="closeLightbox()">×</button>
-        <button class="prev" onclick="prevImage()">&#10094;</button>
-        <img id="lightboxImage" src="" alt="Expanded Image">
-        <button class="next" onclick="nextImage()">&#10095;</button>
+        <button class="close" onclick="closeLightbox()" aria-label="Close dialog">×</button>
+        <button class="prev" onclick="prevImage()" aria-label="Previous image">&#10094;</button>
+        <div class="lightbox-content">
+            <img id="lightboxImage" src="" alt="Expanded View">
+            <div class="lightbox-caption" id="lightboxCaption"></div>
+        </div>
+        <button class="next" onclick="nextImage()" aria-label="Next image">&#10095;</button>
     </div>
 
-    <script>
-        let images = document.querySelectorAll(".gallery img");
-        let lightbox = document.getElementById("lightbox");
-        let lightboxImage = document.getElementById("lightboxImage");
-        let currentIndex = 0;
-
-        // Open Lightbox
-        images.forEach((img, index) => {
-            img.addEventListener("click", () => {
-                currentIndex = index;
-                lightboxImage.src = img.src;
-                lightbox.classList.add("show");
-            });
-        });
-
-        // Close Lightbox
-        function closeLightbox() {
-            lightbox.classList.remove("show");
-        }
-
-        // Navigate Images
-        function prevImage() {
-            currentIndex = (currentIndex - 1 + images.length) % images.length;
-            lightboxImage.src = images[currentIndex].src;
-        }
-
-        function nextImage() {
-            currentIndex = (currentIndex + 1) % images.length;
-            lightboxImage.src = images[currentIndex].src;
-        }
-
-        // Close Lightbox with ESC key
-        document.addEventListener("keydown", (e) => {
-            if (e.key === "Escape") closeLightbox();
-            if (e.key === "ArrowLeft") prevImage();
-            if (e.key === "ArrowRight") nextImage();
-        });
-
-        // Close Lightbox by Clicking Outside Image
-        lightbox.addEventListener("click", (e) => {
-            if (e.target === lightbox) closeLightbox();
-        });
-    </script>
-
+    <footer>
+        <div class="footer-container">
+            <div>
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html#home">Home</a></li>
+                    <li><a href="index.html#about">About Us</a></li>
+                    <li><a href="index.html#engineering-design">Engineering Design</a></li>
+                    <li><a href="index.html#engineering-services">Engineering Services</a></li>
+                    <li><a href="projects.html">Projects Completed</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3>Our Products</h3>
+                <ul>
+                    <li><a href="injection-molds.html">Injection Molds</a></li>
+                    <li><a href="press-tools.html">Press Tools</a></li>
+                    <li><a href="die-casting.html">Die Casting</a></li>
+                    <li><a href="jigs-and-fixtures.html">Jigs & Fixtures</a></li>
+                    <li><a href="sand-casting.html">Sand Casting</a></li>
+                    <li><a href="spm-machines.html">SPM Machines</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3>Contact Us</h3>
+                <p><strong>Siegen Global Manufacturing Pvt Ltd</strong></p>
+                <p>Plot No: PAP A-5/4/9, Phase-IV, Nighoje Chakan, Pune - 410501, India.</p>
+                <p>📞 +91 9966738638</p>
+                <p>📧 siegenglobal.mfg@gmail.com</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            Designed by: <a href="#">MID</a> | Hosted by: <a href="#">GID</a> | Promoted by: <a href="#">PBD</a>
+        </div>
+    </footer>
 </body>
 </html>
