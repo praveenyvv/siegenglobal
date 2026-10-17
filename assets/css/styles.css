@@ -1341,13 +1341,37 @@ footer {
     }
 
     .slideshow-container {
-        height: 48vh;
-        min-height: 320px;
+        height: 42vh;
+        min-height: 260px;
+    }
+
+    .slide-caption-wrap {
+        bottom: 25px;
     }
 
     .slide-text {
-        font-size: 1.05rem;
+        font-size: 0.95rem;
         padding: 8px 18px;
+        letter-spacing: 1px;
+    }
+
+    .welcome-section,
+    .about-section,
+    .services-section,
+    .engineering-design-section,
+    .engineering-services-section,
+    .project-fields-section,
+    .clients-section,
+    .enquiry-section {
+        padding: 45px 16px;
+    }
+
+    .section-header {
+        margin-bottom: 30px;
+    }
+
+    .section-header h2 {
+        font-size: 1.65rem;
     }
 
     .form-grid {
@@ -1361,26 +1385,219 @@ footer {
     .about-bullets {
         grid-template-columns: 1fr;
     }
-
-    .highlights-grid {
-        grid-template-columns: repeat(3, 1fr);
-    }
 }
 
-@media screen and (max-width: 480px) {
+/* ===================================================
+   Mobile View (Max 680px) - Soothing Multi-Item Grid
+   =================================================== */
+@media screen and (max-width: 680px) {
     .logo img {
-        height: 36px;
-        max-width: 160px;
+        height: 38px;
+        max-width: 170px;
     }
 
-    .highlights-grid {
-        grid-template-columns: 1fr;
+    header {
+        padding: 8px 14px;
+        height: 64px;
     }
 
+    .slideshow-container {
+        margin-top: 64px;
+        height: 35vh;
+        min-height: 230px;
+    }
+
+    /* 2-Column Soothing Products Grid */
     .products-grid {
-        grid-template-columns: 1fr;
+        grid-template-columns: repeat(2, 1fr) !important;
+        gap: 12px !important;
     }
 
-    .lightbox .prev { left: 10px; padding: 12px 16px; font-size: 20px; }
-    .lightbox .next { right: 10px; padding: 12px 16px; font-size: 20px; }
+    .product-card {
+        border-radius: var(--radius-sm);
+    }
+
+    .product-card .img-box {
+        height: 120px;
+    }
+
+    .product-card .content-box {
+        padding: 10px 10px 12px;
+    }
+
+    .product-card h3 {
+        font-size: 0.96rem;
+        margin: 0 0 4px;
+        line-height: 1.25;
+        font-weight: 700;
+    }
+
+    .product-card p {
+        font-size: 0.78rem;
+        line-height: 1.35;
+        margin: 0 0 8px;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+    }
+
+    .product-card .card-link {
+        font-size: 0.75rem;
+        font-weight: 700;
+    }
+
+    /* 2-Column Soothing Gallery Grid */
+    .gallery {
+        grid-template-columns: repeat(2, 1fr) !important;
+        gap: 10px !important;
+    }
+
+    .gallery-card {
+        border-radius: var(--radius-sm);
+    }
+
+    .gallery-card img {
+        height: 125px;
+    }
+
+    .gallery-card .caption {
+        padding: 8px 8px;
+        font-size: 0.78rem;
+        line-height: 1.25;
+    }
+
+    /* 2-Column Engineering Services */
+    .eng-services-grid {
+        grid-template-columns: repeat(2, 1fr) !important;
+        gap: 10px !important;
+    }
+
+    .eng-service-card img {
+        height: 110px;
+    }
+
+    .eng-service-card h3 {
+        padding: 8px;
+        font-size: 0.82rem;
+        line-height: 1.25;
+    }
+
+    /* Compact Engineering Design Workflow */
+    .design-workflow {
+        gap: 12px;
+        margin: 20px auto;
+    }
+
+    .workflow-item {
+        padding: 16px 12px;
+    }
+
+    .workflow-icon {
+        width: 70px;
+        height: 70px;
+        margin: 0 auto 10px;
+    }
+
+    .workflow-item h3 {
+        font-size: 1rem;
+        margin-bottom: 4px;
+    }
+
+    .workflow-item p {
+        font-size: 0.8rem;
+        line-height: 1.35;
+    }
+
+    .workflow-arrow {
+        transform: rotate(90deg);
+        font-size: 20px;
+        margin: 2px 0;
+    }
+
+    /* 2-Column Key Results */
+    .key-results-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+        margin-top: 20px;
+    }
+
+    .key-result-card {
+        padding: 12px 10px;
+    }
+
+    .key-result-card h4 {
+        font-size: 0.88rem;
+        margin-bottom: 4px;
+    }
+
+    .key-result-card p {
+        font-size: 0.75rem;
+        line-height: 1.35;
+    }
+
+    /* 2-Column Clients & Sectors */
+    .clients-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+
+    .client-badge-card {
+        padding: 14px 10px;
+    }
+
+    .client-icon {
+        font-size: 1.6rem;
+        margin-bottom: 6px;
+    }
+
+    .client-badge-card h4 {
+        font-size: 0.88rem;
+    }
+
+    .client-badge-card p {
+        font-size: 0.75rem;
+        line-height: 1.3;
+    }
+
+    /* Welcome Highlights - 3 in one row */
+    .highlights-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 8px;
+    }
+
+    .highlight-box {
+        padding: 10px 6px;
+    }
+
+    .highlight-number {
+        font-size: 1.25rem;
+    }
+
+    .highlight-label {
+        font-size: 0.72rem;
+    }
+
+    /* Gallery Page Header */
+    .gallery-page-header {
+        margin-top: 64px;
+        padding: 24px 14px 12px;
+    }
+
+    .gallery-page-header h1 {
+        font-size: 1.55rem;
+    }
+
+    .gallery-page-header p {
+        font-size: 0.88rem;
+        margin-bottom: 12px;
+    }
+
+    .gallery-nav-bar a {
+        padding: 6px 12px;
+        font-size: 0.78rem;
+    }
+
+    .lightbox .prev { left: 8px; padding: 10px 14px; font-size: 18px; }
+    .lightbox .next { right: 8px; padding: 10px 14px; font-size: 18px; }
 }
